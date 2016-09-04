@@ -23,7 +23,7 @@ h_theta = sigmoid(X*theta);
 J = sum((-y)' * log(h_theta) -(1-y)'*log(1-h_theta))/m;
 
 for iter = 1:size(theta)(1)
-	grad(iter) = sum((h_theta-y).*X(:,1))/m;
+	grad(iter) = sum((h_theta-y).*X(:,iter))/m;
 end
 
 
